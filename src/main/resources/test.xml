@@ -1,0 +1,13 @@
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ss="http://localhost:8080/stilus/stilus-compute-web-service">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ss:getComputeRequest>
+
+            <ss:ilkDeger>12.0</ss:ilkDeger>
+            <ss:ikinciDeger>13.0</ss:ikinciDeger>
+            <ss:islem>cikarma</ss:islem>
+        </ss:getComputeRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

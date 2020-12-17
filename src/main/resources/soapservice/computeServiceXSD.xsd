@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://localhost:8080/stilus/stilus-compute-web-service"
+           targetNamespace="http://localhost:8080/stilus/stilus-compute-web-service" elementFormDefault="qualified">
+
+    <xs:element name="getComputeRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ilkDeger" type="xs:float"/>
+                <xs:element name="ikinciDeger" type="xs:float"/>
+                <xs:element name="islem" type="tns:islem"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getComputeResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="computeResponse" type="tns:computeResponse"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="computeResponse">
+        <xs:sequence>
+            <xs:element name="result" type="xs:float"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="islem">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="toplama"/>
+            <xs:enumeration value="cikarma"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

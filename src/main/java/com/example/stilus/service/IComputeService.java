@@ -1,5 +1,7 @@
 package com.example.stilus.service;
 
+import com.example.stilus.ws.models.Islem;
+
 public interface IComputeService {
 
     float topla(float a,float b);
@@ -8,6 +10,7 @@ public interface IComputeService {
     float bol(float a,float b);
     float mod(float a,float b);
     float karekok(float a);
+    float computeDispacer(float a, float b, Islem i);
 
 
 }

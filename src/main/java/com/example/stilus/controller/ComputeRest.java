@@ -1,9 +1,8 @@
 package com.example.stilus.controller;
 
 import com.example.stilus.model.ComputeResult;
-import com.example.stilus.service.ComputeService;
+import com.example.stilus.service.IComputeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ComputeRest {
 
     @Autowired
-    ComputeService computeService;
+    IComputeService computeService;
 
     @PostMapping("/topla")
     public ResponseEntity<?> topla(@RequestParam(value = "ilkDeger",required = false) Float ilkDeger, @RequestParam(name="ikinciDeger",required = false) Float ikinciDeger){

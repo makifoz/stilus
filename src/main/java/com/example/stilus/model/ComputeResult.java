@@ -6,6 +6,9 @@ public class ComputeResult {
     private String islem;
     private float result;
 
+    public ComputeResult(){}
+
+
     public ComputeResult(float ilkDeger, float ikinciDeger, String islem, float result) {
         this.ilkDeger = ilkDeger;
         this.ikinciDeger = ikinciDeger;
