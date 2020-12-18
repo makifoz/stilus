@@ -52,6 +52,15 @@ public class GetComputeRequest {
     @XmlSchemaType(name = "string")
     protected Islem islem;
 
+    public GetComputeRequest() {
+    }
+
+    public GetComputeRequest(float ilkDeger, float ikinciDeger, Islem islem) {
+        this.ilkDeger = ilkDeger;
+        this.ikinciDeger = ikinciDeger;
+        this.islem = islem;
+    }
+
     /**
      * Gets the value of the ilkDeger property.
      * 
