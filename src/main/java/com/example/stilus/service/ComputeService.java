@@ -36,7 +36,7 @@ public class ComputeService implements IComputeService {
     }
 
     @Override
-    public float computeDispacer(float a, float b, Islem i) {
+    public float computeDispatcher(float a, float b, Islem i) {
         switch (i){
             case CIKARMA:
                 return cikar(a,b);

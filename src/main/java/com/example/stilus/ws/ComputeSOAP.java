@@ -27,7 +27,7 @@ public class ComputeSOAP {
       ComputeResponse r = new ComputeResponse();
 
 
-      r.setResult(computeService.computeDispacer(request.getIlkDeger(),request.getIkinciDeger(),request.getIslem()));
+      r.setResult(computeService.computeDispatcher(request.getIlkDeger(),request.getIkinciDeger(),request.getIslem()));
       response.setComputeResponse(r);
 
       return response;

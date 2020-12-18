@@ -10,7 +10,7 @@ public interface IComputeService {
     float bol(float a,float b);
     float mod(float a,float b);
     float karekok(float a);
-    float computeDispacer(float a, float b, Islem i);
+    float computeDispatcher(float a, float b, Islem i);
 
 
 }
